@@ -5,15 +5,15 @@
 `goao` provides a comprehensive, type-safe, and efficient way to spawn processes, send messages, read state, and manage encrypted communications within the AO compute network. Built on the same principles as [`goar`](https://github.com/permadao/goar) and compatible with the [`ao-connect`](https://github.com/permaweb/ao/tree/main/connect) TypeScript SDK.
 
 [![Go Version](https://img.shields.io/badge/go-1.21+-blue.svg)](https://golang.org/dl/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Test Status](https://github.com/permadao/goao/actions/workflows/main.yml/badge.svg)](https://github.com/permadao/goao/actions)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)]
+[![Test Status](https://github.com/kimtony123/goao/actions/workflows/main.yml/badge.svg)
 
 ---
 
 ## 📦 Installation
 
 ```bash
-go get github.com/permadao/goao
+go get github.com/kimtony123/goao
 ```
 
 ---
@@ -25,8 +25,8 @@ package main
 
 import (
     "fmt"
-    "github.com/permadao/goao"
-    "github.com/permadao/goao/signer"
+    "github.com/kimtony123/goao"
+    "github.com/kimtony123/goao/signer"
 )
 
 func main() {
@@ -107,7 +107,7 @@ client := goao.NewClient(
 
 ### RSA Signer (Arweave JWK)
 ```go
-import "github.com/permadao/goao/signer"
+import "github.com/kimtony123/goao/signer"
 
 // Load from JWK file
 s, err := signer.NewRSASignerFromPath("wallet.json")
@@ -200,7 +200,7 @@ results, err := client.ListResults(opts)
 
 ### Sending Encrypted Data
 ```go
-import "github.com/permadao/goao/encrypt"
+import "github.com/kimtony123/goao/encrypt"
 
 // Load recipient's public key
 pubKey := loadRSAPublicKey("recipient_pub.pem")
@@ -301,9 +301,6 @@ go test -v ./dataitem/...
 
 ```
 📁 goao/
-├── 📁 .github/
-│   └── 📁 workflows/
-│       └── 📄 main.yml              # CI/CD (tests + Protocol Land sync)
 ├── 📁 schema/
 │   ├── 📄 schema.go                 # Types, Constants, Tags
 │   └── 📄 schema_test.go            # Schema tests
@@ -387,11 +384,7 @@ export AO_GATEWAY_URL="https://arweave.net"
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 🙏 Acknowledgments
 
@@ -403,7 +396,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **GitHub Issues:** [Report bugs or request features](https://github.com/permadao/goao/issues)
+- **GitHub Issues:** Report bugs or request features at https://github.com/kimtony123/goao/issues
 - **Discord:** [Permaweb Discord](https://discord.gg/permaweb)
 - **Documentation:** [AO Docs](https://docs.ao.arweave.dev/)
 
