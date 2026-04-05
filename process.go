@@ -8,10 +8,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/ar-aostore/goao/dataitem"
-	"github.com/ar-aostore/goao/encrypt"
-	"github.com/ar-aostore/goao/schema"
-	"github.com/ar-aostore/goao/signer"
+	"github.com/kimtony123/goao/dataitem"
+	"github.com/kimtony123/goao/encrypt"
+	"github.com/kimtony123/goao/schema"
+	"github.com/kimtony123/goao/signer"
 )
 
 // SendMessage sends a message to an AO process

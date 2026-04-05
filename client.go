@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ar-aostore/goao/schema"
-	"github.com/ar-aostore/goao/signer" // ✅ ADDED
+	"github.com/kimtony123/goao/schema"
+	"github.com/kimtony123/goao/signer" // ✅ ADDED
 )
 
 // Default URLs for AO Testnet

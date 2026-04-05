@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ar-aostore/goao/schema"
+	"github.com/kimtony123/goao/schema"
 )
 
 // GetResult fetches the result of a message evaluation from the Compute Unit (CU)

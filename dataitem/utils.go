@@ -7,7 +7,7 @@ import (
 	"io"
 	"sort"
 
-	"github.com/ar-aostore/goao/schema"
+	"github.com/kimtony123/goao/schema"
 )
 
 // WriteVarInt writes a variable-length integer to the writer
