@@ -1,0 +1,55 @@
+# Go
+go.sum
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Test keys (keep testKey.json for testing, ignore production keys)
+*.key
+*.pem
+!testKey.json
+wallet.json
+wallet-*.json
+*.wallet.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AO/AOS specific
+aos.json
+aos-*.json
+.cache/
+
+# Coverage
+coverage.out
+coverage.html
+*.prof
+cpu.prof
+mem.prof
+
+# Test artifacts
+test-results.json
+report.xml
+
+# Temporary
+tmp/
+temp/
+*.tmp
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
