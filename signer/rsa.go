@@ -1,7 +1,7 @@
 package signer
 
 import (
-	"crypto"      // ✅ ADDED
+	"crypto"
 	"crypto/rand"
 	"crypto/rsa"
 	"crypto/sha256"

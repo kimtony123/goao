@@ -1,5 +1,9 @@
 package schema
 
+import (
+	"crypto/rsa"
+)
+
 // ============================================================================
 // AO Protocol Constants
 // ============================================================================
@@ -201,15 +205,14 @@ type SpawnOptions struct {
 // ============================================================================
 // SendMessageOptions - Options for sending a message
 // ============================================================================
-// Update SendMessageOptions in schema/schema.go
 
 type SendMessageOptions struct {
-    Process        string          `json:"process"`
-    Data           []byte          `json:"data"`
-    Tags           []Tag           `json:"tags,omitempty"`
-    Anchor         []byte          `json:"anchor,omitempty"`
-    EncryptWithRSA *rsa.PublicKey  `json:"encryptWithRSA,omitempty"` // ✅ Already correct
-    GatewayURL     string          `json:"gatewayURL,omitempty"`     // 🆕 ADD: Allow per-message gateway override
+	Process        string         `json:"process"`
+	Data           []byte         `json:"data"`
+	Tags           []Tag          `json:"tags,omitempty"`
+	Anchor         []byte         `json:"anchor,omitempty"`
+	EncryptWithRSA *rsa.PublicKey `json:"encryptWithRSA,omitempty"`
+	GatewayURL     string         `json:"gatewayURL,omitempty"`
 }
 
 

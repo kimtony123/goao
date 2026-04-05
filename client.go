@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/kimtony123/goao/schema"
-	"github.com/kimtony123/goao/signer" // ✅ ADDED
+	"github.com/kimtony123/goao/signer"
 )
 
 // Default URLs for AO Testnet
@@ -32,7 +32,7 @@ type Client struct {
 	ComputeGateway      string
 	GraphQLMaxRetries   int
 	GraphQLRetryBackoff time.Duration
-	Signer              signer.Signer // ✅ FIXED: Use signer.Signer
+	Signer              signer.Signer
 	httpClient          *http.Client
 }
 
