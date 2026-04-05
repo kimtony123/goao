@@ -6,7 +6,7 @@
 
 [![Go Version](https://img.shields.io/badge/go-1.21+-blue.svg)](https://golang.org/dl/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)]
-[![Test Status](https://github.com/kimtony123/goao/actions/workflows/main.yml/badge.svg)
+[![Test Status](https://github.com/kimtony123/goao/actions/workflows/main.yml/badge.svg)]
 
 ---
 
